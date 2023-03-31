@@ -31,7 +31,7 @@ for edge in edges:
     if find_parent(parent,a)==find_parent(parent,b):
         continue
     else:
-        union_set(a,b) #연결
+        union_set(parent,a,b) #연결
         result+=c #비용합산
 
 print(result)
